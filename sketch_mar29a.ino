@@ -24,6 +24,16 @@ void setup() {
   md.init();
   smd1.init();
   smd2.init();
+  md.setM1Speed(100); //1:51
+    md.setM2Speed(290); //1:139
+    smd1.setM1Speed(280); //1:139
+    smd2.setM1Speed(100); //1:51
+    delay(5000);
+  md.setM1Speed(0); //1:51
+  md.setM2Speed(0); //1:139
+  smd1.setM1Speed(0); //1:139
+  smd2.setM1Speed(0); //1:51
+  delay(5000);
 
 
 }
@@ -31,16 +41,31 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  md.setM1Speed(100); //1:51
-  md.setM2Speed(290); //1:139
-  smd1.setM1Speed(280); //1:139
-  smd2.setM1Speed(100); //1:51
-  stopIfFault();
+  
+    /*md.setM1Speed(100); //1:51
+    md.setM2Speed(290); //1:139
+    smd1.setM1Speed(280); //1:139
+    smd2.setM1Speed(100); //1:51
+    stopIfFault();
+    
+    /*i++;
+    if(i > 3) {
+      md.setM1Speed(0); //1:51
+      md.setM2Speed(0); //1:139
+      smd1.setM1Speed(0); //1:139
+      smd2.setM1Speed(0); //1:51
+    }*/
 
-
-
+  /*
+  delay(5000);
+  md.setM1Speed(0); //1:51
+  md.setM2Speed(0); //1:139
+  smd1.setM1Speed(0); //1:139
+  smd2.setM1Speed(0); //1:51
+  delay(2000);*/
 
 }
+
 
 
 void stopIfFault() {
